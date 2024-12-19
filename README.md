@@ -1,6 +1,6 @@
 # POPIFY Framework
 
-The POPIFY Framework is designed to boost developer productivity by automating source code generation. It allows you to create commonly used project files (controllers, models, components, etc.) via an intuitive and extensible CLI.
+The POPIFY Framework is designed to boost developer productivity by automating source code generation. It helps you to create commands to generate commonly used project files (controllers, models, components, etc.) via an intuitive and extensible CLI.
 
 ## Key Features
 
