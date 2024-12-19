@@ -1,0 +1,20 @@
+import { Args, Command, Flags } from '@oclif/core'
+import {BaseMakeCommand} from "../base-make-command.ts";
+
+export default class {{Name}}Command extends BaseMakeCommand<typeof {{Name}}Command> {
+  static override args = {
+    name: Args.string({description: 'name to print'}),
+  }
+
+  static override description = 'describe the command here'
+
+  static override examples = [
+    '<%= config.bin %> <%= command.id %>',
+  ]
+
+  async handle(): Promise<number> {
+
+    return 0;
+  }
+
+}

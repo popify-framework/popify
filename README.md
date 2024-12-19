@@ -50,7 +50,7 @@ popify.config.ts (optional)
 src/
     index.ts
     commands/
-        make-command.ts
+        base-make-command.ts
     filesystem/
         touch.ts
         mkdir.ts
@@ -63,7 +63,7 @@ src/
 Here is an example class to create a React context file:
 
 ```typescript
-class MakeContext extends MakeCommand {
+class MakeContext extends BaseMakeCommand {
 
     name = 'make:context {name}'
     summary = 'Create a react context file'

@@ -24,15 +24,14 @@ export default class StubService {
         // Replace placeholders with actual values
         for (const placeholderName in data) {
             const value = data[placeholderName];
-            const placeholder = `{${placeholderName}}`;
-            content = content.replace(new RegExp(`\{${placeholderName}\}`, 'g'), value);
+            content = content.replace(new RegExp(`\{\{${placeholderName}\}\}`, 'g'), value);
         }
 
         return content;
     }
 
     private findPlaceholders(content: string): string[] {
-        const matches = content.match(/\{([a-zA-Z0-9]*)\}/g); // Match all alphanumeric strings between {}
-        return matches ? matches.map(match => match.slice(1, -1)) : [];
+        const matches = content.match(/\{\{([a-zA-Z0-9]*)\}\}/g); // Match alphanumeric strings between {{ and }}
+        return matches ? matches.map(match => match.slice(2, -2)) : [];
     }
 }
