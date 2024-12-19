@@ -3,9 +3,23 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/node": "18",
+    "ts-node": "^10.9.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "bin": {
+    "popify": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "popify",
+    "commands": "./dist/commands",
+    "dirname": "popify",
+    "topicSeparator": ":"
+  },
+  "dependencies": {
+    "@oclif/core": "^4.1.1"
   }
 }
