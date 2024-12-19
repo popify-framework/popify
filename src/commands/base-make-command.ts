@@ -1,5 +1,5 @@
 import {Command, Flags, Interfaces} from '@oclif/core'
-import {FilesystemService} from "../filesystem/filesystem-service.ts";
+import FilesystemService from "../filesystem/filesystem-service.ts";
 import StubService from "../stub/stub-service.ts";
 
 export type Flags<T extends typeof Command> = Interfaces.InferredFlags<typeof BaseMakeCommand['baseFlags'] & T['flags']>
