@@ -4,11 +4,11 @@
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/node": "18",
+    "@types/node": "^18.19.74",
     "ts-node": "^10.9.2"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.7.2"
   },
   "bin": {
     "popify": "./bin/run.ts"
@@ -20,7 +20,7 @@
     "topicSeparator": ":"
   },
   "dependencies": {
-    "@oclif/core": "^4.1.1"
+    "@oclif/core": "^4.2.5"
   },
   "scripts": {
     "build": "bun run oclif-dev build",
