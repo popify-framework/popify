@@ -1,14 +1,14 @@
 # POPIFY Framework
 
-The POPIFY Framework is designed to boost developer productivity by automating source code generation. It allows you to create commonly used project files (controllers, models, components, etc.) via an intuitive and extensible CLI.
+> This is a Work In Progress ! 
+
+The POPIFY Framework is designed to boost developer productivity by automating source code generation. It helps you to create commands to generate commonly used project files (controllers, models, components, etc.) via an intuitive and extensible CLI.
 
 ## Key Features
 
 - **Generate Common Files**: Quickly generate files such as controllers, models, components, and more.
 - **Stub-Based System**: Customize generated files by replacing placeholders in file contents and filenames.
-- **Modular Hierarchical Structure**: Simplifies the management of CLI commands, file systems, and stubs.
 - **Extensible CLI**: Easily add new commands to meet your project's specific needs.
-- **TypeScript and Bun Support**: Ensures optimal performance with robust typing.
 
 ## Usage Example
 
@@ -42,20 +42,6 @@ src/
 README.md
 package.json
 popify.config.ts (optional)
-```
-
-### Example: POPIFY Framework
-
-```plaintext
-src/
-    index.ts
-    commands/
-        base-make-command.ts
-    filesystem/
-        touch.ts
-        mkdir.ts
-    stub/
-        stub-service.ts
 ```
 
 ## Class Example
