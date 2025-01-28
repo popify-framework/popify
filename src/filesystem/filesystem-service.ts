@@ -12,7 +12,8 @@ export default class FilesystemService {
      * @param data
      */
     public async writeFile(path: string, data: string) {
-        return await Bun.write(path, data)
+        console.log('FilesystemService.writeFile', path, process.cwd())
+        return await Bun.write(path, data, {createPath: true})
     }
 
     /**
@@ -20,6 +21,7 @@ export default class FilesystemService {
      * @param path
      */
     public async readFile(path: string) {
+        console.log('FilesystemService.readFile', path, process.cwd())
         const file = Bun.file(path)
         return await file.text()
     }

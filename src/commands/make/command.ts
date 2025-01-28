@@ -20,7 +20,7 @@ export default class MakeCommand extends BaseMakeCommand<typeof MakeCommand> {
       throw new Error('name is required')
     }
 
-    let content = await this.readStub('src/commands/make/command.stub')
+    let content = await this.readStub(__dirname + '/command.stub')
     let filePath = await this.inject(commandName, {
       name: name
     });

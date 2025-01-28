@@ -1,5 +1,5 @@
 import { Args, Command, Flags } from '@oclif/core'
-import {BaseMakeCommand} from "../base-make-command.ts";
+import { BaseMakeCommand } from "popify-framework";
 
 export default class {{Name}}Command extends BaseMakeCommand<typeof {{Name}}Command> {
   static override args = {

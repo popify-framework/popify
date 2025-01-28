@@ -13,6 +13,9 @@
   "bin": {
     "popify": "./bin/run.ts"
   },
+  "exports": {
+    ".": "./src/index.ts"
+  },
   "oclif": {
     "bin": "popify",
     "commands": "./src/commands",
